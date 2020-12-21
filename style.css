@@ -45,6 +45,7 @@ body {
     border-radius: 5px;
     padding: 50px;
     width: 95%;
+    max-width: 1100px;
 }
 
 .card-header {
