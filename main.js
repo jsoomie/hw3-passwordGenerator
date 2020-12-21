@@ -36,6 +36,8 @@ function createPass() {
             // If user doesn't choose any characters, throws this error up
             if(!userUppers && !userLowers && !userNumbers && !userSpecials) {
                 alert("ERROR: You must include one form of characters to begin!");
+                // Return in place to prevent undefined from showing
+                return "ERROR: You must include one form of characters to begin!";
                 userValid = false;
                 }
 
@@ -56,17 +58,7 @@ function createPass() {
             for(var i = 0; i < parseInt(userLen); i++) {
                 password += userChoice[Math.floor(Math.random() * userChoice.length)];
             }
-
-            // Returns created password based off of user's preference
-            if(password === null || typeof password === 'undefined') {
-                // typeof password === 'undefined' does not work. 
-                alert('Somethign went wrong, please try again.');
-                userValid = false;
-            } else {
-                return password;
-            }
-    
-
+            return password;
         }
     }
 
