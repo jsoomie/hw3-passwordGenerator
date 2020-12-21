@@ -93,10 +93,12 @@ body {
     border-radius: 30px;
     font-size: 1.7rem;
     font-weight: 300;
+    opacity: 0.9;
 }
 
 .btn:hover {
     transform: scale(0.98);
+    opacity: 1;
 }
 
 .btn:focus {
