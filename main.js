@@ -24,7 +24,7 @@ function createPass() {
         var userLen = prompt("Desired length of password.\nChoose between " + minlen + " - " + maxlen + " characters.");
         if(isNaN(userLen) || userLen < minlen || userLen > maxlen) {
             alert("ERROR: Please enter a length between "  + minlen + " and " + maxlen + "!");
-            userValid = false;
+            return "ERROR: Please enter a length between "  + minlen + " and " + maxlen + "!";
         } else {
 
             var userUppers = confirm("Include uppercase letters?");
@@ -57,15 +57,13 @@ function createPass() {
             }
 
             // Returns created password based off of user's preference
-            if(password == null) {
+            if(password === null || typeof password === 'undefined') {
                 alert('Somethign went wrong, please try again.');
-                userValid = false;
-            } else if(password == undefined) {
-                alert('Please try again.');
                 userValid = false;
             } else {
                 return password;
             }
+    
 
         }
     }
