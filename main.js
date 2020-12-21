@@ -10,7 +10,7 @@ function printPass() {
 // prompts user and creates password according to users preference
 function createPass() {
     var maxlen = 128;
-    var minlen = 7;
+    var minlen = 8;
     var uppers = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
     var lowers = "abcdefghijklmnopqrstuvwxyz";
     var numbers = "0123456789";
