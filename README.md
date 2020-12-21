@@ -1,7 +1,7 @@
 # hw3-passwordGenerator
 
 ## Link to website
-[Link to website that contains the password generator on github here](https://sksmejn.github.io/hw3-passwordGenerator/ "Password Generator")
+[Click here for the website generator!](https://sksmejn.github.io/hw3-passwordGenerator/ "Password Generator")
 
 A website that generates a password with a series of prompts that goes through criterias of the user's choosing. 
 
