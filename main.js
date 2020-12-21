@@ -24,6 +24,7 @@ function createPass() {
         var userLen = prompt("Desired length of password.\nChoose between " + minlen + " - " + maxlen + " characters.");
         if(isNaN(userLen) || userLen < minlen || userLen > maxlen) {
             alert("ERROR: Please enter a length between "  + minlen + " and " + maxlen + "!");
+            // the return in place to prevent undefined from showing
             return "ERROR: Please enter a length between "  + minlen + " and " + maxlen + "!";
         } else {
 
@@ -58,6 +59,7 @@ function createPass() {
 
             // Returns created password based off of user's preference
             if(password === null || typeof password === 'undefined') {
+                // typeof password === 'undefined' does not work. 
                 alert('Somethign went wrong, please try again.');
                 userValid = false;
             } else {
