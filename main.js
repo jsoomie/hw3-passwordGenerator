@@ -38,7 +38,6 @@ function createPass() {
                 alert("ERROR: You must include one form of characters to begin!");
                 // Return in place to prevent undefined from showing
                 return "ERROR: You must include one form of characters to begin!";
-                userValid = false;
                 }
 
             } // Puts all of user's preference into a variable
@@ -58,6 +57,8 @@ function createPass() {
             for(var i = 0; i < parseInt(userLen); i++) {
                 password += userChoice[Math.floor(Math.random() * userChoice.length)];
             }
+
+            if(userUppers && password )
             return password;
         }
     }
