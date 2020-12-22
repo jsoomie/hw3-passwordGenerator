@@ -57,6 +57,7 @@ function createPass() {
             for(var i = 0; i < parseInt(userLen); i++) {
                 password += userChoice[Math.floor(Math.random() * userChoice.length)];
             }
+            return password;
         }
     }
 
