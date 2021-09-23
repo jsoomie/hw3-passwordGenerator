@@ -1,7 +1,7 @@
 # hw3-passwordGenerator
 
 ## Link to website
-[Click here for the website generator!](https://sksmejn.github.io/hw3-passwordGenerator/ "Password Generator")
+[Click here for the website generator!](https://jsoomie.github.io/hw3-passwordGenerator/ "Password Generator")
 
 ## Webpage info
 
